@@ -10,6 +10,16 @@
 
 ---
 
+## Screen Recording & Interactive Walkthrough
+
+A complete 30-second smooth scroll recording capturing the cinematic loading screen, hero entrance, scroll reveals, interactive menu drawer with sommelier pairing cards, and Chef Syifa Umairah section:
+
+[![Ember and Olive Screen Recording](docs/ember-olive-preview.gif)](docs/ember-olive-demo.mp4)
+
+> **Watch Full HD Video**: [Download or view docs/ember-olive-demo.mp4](docs/ember-olive-demo.mp4) (H.264, 30fps, 1440x900).
+
+---
+
 ## Visual Showcase
 
 ### 01. The Cinematic Hero
@@ -148,6 +158,7 @@ ember-olive/
 | `npm run build` | Runs TypeScript compilation and builds for production into `dist/` |
 | `npm run preview` | Locally preview the production build |
 | `npm run screenshots` | Runs the headless browser script to capture visual assets |
+| `npm run record` | Automates browser tour and records MP4 screen walkthrough via FFmpeg |
 
 ---
 
