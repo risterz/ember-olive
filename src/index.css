@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-light: #2a2a2a;
+  --color-charcoal-mid: #222222;
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #e0d5c5;
+  --color-cream-muted: #c8bfb0;
+  --color-olive: #6b7c5e;
+  --color-olive-light: #8a9c7a;
+  --color-copper: #b87333;
+  --color-copper-light: #d4956a;
+
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::selection {
+  background-color: var(--color-olive);
+  color: var(--color-cream);
+}
+
+/* Scroll progress bar at top */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--color-copper);
+  z-index: 9999;
+  transform-origin: left;
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--color-cream);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-cursor.expanded {
+  width: 80px;
+  height: 80px;
+  border-color: var(--color-copper);
+}
+
+.custom-cursor .cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: var(--color-cream);
+  white-space: nowrap;
+}
+
+.custom-cursor.expanded .cursor-text {
+  opacity: 1;
+}
+
+/* Image reveal mask */
+.image-reveal {
+  clip-path: inset(100% 0 0 0);
+}
+
+.image-reveal.revealed {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 8000;
+  background: var(--color-charcoal);
+}
+
+/* Smooth scrollbar styling for lightbox navigation */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-charcoal-light);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-olive);
+}
