@@ -7,6 +7,9 @@
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.3-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![GSAP](https://img.shields.io/badge/GSAP-3.15-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
+[![Cloudflare Workers](https://img.shields.io/badge/Deployed%20on-Cloudflare-F38020?logo=cloudflare&logoColor=white)](https://ember-olive.harisharraz02.workers.dev)
+
+> **Live Preview**: [https://ember-olive.harisharraz02.workers.dev](https://ember-olive.harisharraz02.workers.dev)
 
 ---
 
@@ -159,6 +162,7 @@ ember-olive/
 | `npm run preview` | Locally preview the production build |
 | `npm run screenshots` | Runs the headless browser script to capture visual assets |
 | `npm run record` | Automates browser tour and records MP4 screen walkthrough via FFmpeg |
+| `npm run deploy` | Deploys static build to Cloudflare Workers with Static Assets via Wrangler |
 
 ---
 
