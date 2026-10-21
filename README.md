@@ -7,9 +7,9 @@
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.3-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![GSAP](https://img.shields.io/badge/GSAP-3.15-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
-[![Cloudflare Workers](https://img.shields.io/badge/Deployed%20on-Cloudflare-F38020?logo=cloudflare&logoColor=white)](https://ember-olive.harisharraz02.workers.dev)
+[![Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://ember-olive-6v6.pages.dev)
 
-> **Live Preview**: [https://ember-olive.harisharraz02.workers.dev](https://ember-olive.harisharraz02.workers.dev)
+> **Live Preview**: [https://ember-olive-6v6.pages.dev](https://ember-olive-6v6.pages.dev)
 
 ---
 
